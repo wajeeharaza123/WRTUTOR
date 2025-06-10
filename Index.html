@@ -1,0 +1,180 @@
+html_code_final = """
+<!DOCTYPE index.html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>WR Tutor - Empowering IB Students</title>
+<style>
+body {
+margin: 0;
+font-family: 'Helvetica Neue', sans-serif;
+background-color: #ffffff;
+color: #1a1a1a;
+}
+
+header {
+background: linear-gradient(to right, #2e3a59, #3e4b71);
+color: white;
+padding: 80px 20px;
+text-align: center;
+}
+
+header h1 {
+font-size: 48px;
+margin: 0;
+}
+
+header p {
+font-size: 18px;
+margin-top: 10px;
+color: #dcdcdc;
+}
+
+nav {
+background-color: white;
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+text-align: center;
+padding: 15px 0;
+position: sticky;
+top: 0;
+z-index: 999;
+}
+
+nav a {
+color: #2e3a59;
+text-decoration: none;
+margin: 0 20px;
+font-weight: 600;
+font-size: 16px;
+}
+
+.section {
+padding: 60px 20px;
+max-width: 1000px;
+margin: auto;
+}
+
+h2 {
+color: #2e3a59;
+font-size: 32px;
+margin-bottom: 10px;
+}
+
+ul {
+line-height: 1.8;
+}
+
+footer {
+background-color: #2e3a59;
+color: white;
+text-align: center;
+padding: 30px 20px;
+}
+
+form {
+display: flex;
+flex-direction: column;
+gap: 12px;
+margin-top: 20px;
+}
+
+input, select {
+padding: 12px;
+font-size: 1em;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+button {
+background-color: #2e3a59;
+color: white;
+padding: 14px;
+border: none;
+border-radius: 5px;
+font-size: 1em;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #1c2538;
+}
+
+.highlight {
+color: #2e3a59;
+font-weight: bold;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<h1>WR Tutor</h1>
+<p>Empowering IB students with mentoring, coaching, and clarity.</p>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#services">Programs</a>
+<a href="#register">Register</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="section" id="about">
+<h2>About the Founder</h2>
+<p>Hi! I’m <strong>Wajeeha Raza</strong>, founder of WR Tutor. As a recent IB graduate, I earned a <span class="highlight">40</span> and an ATAR of <span class="highlight">96.6</span>, finishing as Dux of my cohort. I'm passionate about <strong>mentorship, education coaching</strong>, and helping students go from overwhelmed to confident.</p>
+<p>WR Tutor was born from the mission to provide high-quality, accessible, and strategic guidance for IB students — whether you’re just starting or deep into the Diploma Program. Every journey starts with a free 30-minute trial lesson — no pressure, just support.</p>
+</div>
+
+<div class="section" id="services">
+<h2>What We Offer</h2>
+<ul>
+<li><strong>Private Tutoring:</strong> Specialised support for a range of IB subjects (Maths, Biology, Chemistry, Economics, English & more)</li>
+<li><strong>Pre-IB & DP1 Holiday Programs:</strong> Perfect for students heading into Year 11 and 12 who want to get ahead during breaks</li>
+<li><strong>Free Study Resources:</strong> Downloadable resources to help structure revision and boost retention</li>
+<li><strong>Webinars:</strong> Irregular but powerful online sessions covering mindset, planning, time management, and exam strategy</li>
+<li><strong>Mentorship & Coaching:</strong> Support beyond subjects — study systems, motivation, wellbeing, and more</li>
+</ul>
+</div>
+
+<div class="section" id="register">
+<h2>Register for a Free Trial</h2>
+<p>Tell us about what you need, and we'll be in touch to arrange your first <strong>30-minute free trial session</strong>.</p>
+<form>
+<input type="text" name="name" placeholder="Your Full Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<select name="subject" required>
+<option value="">Select Subject</option>
+<option value="Maths">Maths</option>
+<option value="Biology">Biology</option>
+<option value="Chemistry">Chemistry</option>
+<option value="Economics">Economics</option>
+<option value="English">English</option>
+<option value="Other">Other</option>
+</select>
+<input type="text" name="year" placeholder="Year Level (e.g., Pre-IB, DP1, DP2)" required>
+<input type="number" name="hours" placeholder="Hours per week (1–5)" required min="1" max="10">
+<button type="submit">Submit Registration</button>
+</form>
+</div>
+
+<div class="section" id="contact">
+<h2>Contact</h2>
+<p>Have a question? Reach out anytime:</p>
+<p>Email: <a href="mailto:WRTUTOR.contact@gmail.com">WRTUTOR.contact@gmail.com</a></p>
+</div>
+
+<footer>
+<p>© 2025 WR Tutor. Founded by Wajeeha Raza. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+"""
+
+# Save the new version
+file_path = "/mnt/data/wrtutor_updated.html"
+with open(file_path, "w") as file:
+file.write(html_code_final)
+
+file_path
